@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "AnyMenu",
     platforms: [
-        .macOS(.v10_14), .iOS(12.0),
+        .macOS(.v10_14), .iOS(.v12),
     ],
     products: [
         .library(name: "AnyMenu", targets: ["AnyMenu"])
