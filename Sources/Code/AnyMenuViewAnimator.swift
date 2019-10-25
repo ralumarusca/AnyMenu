@@ -35,7 +35,7 @@ internal class AnyMenuViewAnimator: NSObject {
             tapGestureRecognizer
         ]
 
-        return gestureRecognizers.flatMap { $0 }
+        return gestureRecognizers.compactMap { $0 }
     }
 
     // MARK: - Initializers

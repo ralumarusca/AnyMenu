@@ -3,6 +3,9 @@ import PackageDescription
 
 let package = Package(
     name: "AnyMenu",
+    platforms: [
+        .macOS(.v10_14), .iOS(12.0),
+    ],
     products: [
         .library(name: "AnyMenu", targets: ["AnyMenu"])
     ],
