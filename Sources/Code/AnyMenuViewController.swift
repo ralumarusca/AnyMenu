@@ -363,6 +363,7 @@ public class AnyMenuViewController: UIViewController {
 
     public func updateMenuAnimation(animation: MenuAnimation) {
         animator.updateAnimationAndFinalViewsTransform(animation: animation)
+        configureMenuViewFrame()
         animator.layout(progress: menuState == .closed ? 0 : 1)
     }
 }
