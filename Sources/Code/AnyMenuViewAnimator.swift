@@ -249,6 +249,7 @@ internal class AnyMenuViewAnimator: NSObject {
         self.animation = animation
         finalMenuViewTransform = makeAffineTranform(for: animation.menuViewActions)
         finalContentViewTransform = makeAffineTranform(for: animation.contentViewActions)
+        configureGestureRecognizers()
     }
 
     func setSwipeGestures(enabled flag: Bool) {
