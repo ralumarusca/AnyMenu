@@ -361,6 +361,10 @@ public class AnyMenuViewController: UIViewController {
         window!.makeKeyAndVisible()
     }
 
+    public func updateMenuAnimation(animation: MenuAnimation) {
+        self.animator = AnyMenuViewAnimator(animation: animation)
+    }
+
     public override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         animator.configure(forViewController: self)
         configureMenuViewFrame()
