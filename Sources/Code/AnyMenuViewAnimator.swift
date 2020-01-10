@@ -245,7 +245,8 @@ internal class AnyMenuViewAnimator: NSObject {
         configureGestureRecognizers()
     }
 
-    func updateFinalViewsTransform() {
+    func updateAnimationAndFinalViewsTransform(animation: MenuAnimation) {
+        self.animation = animation
         finalMenuViewTransform = makeAffineTranform(for: animation.menuViewActions)
         finalContentViewTransform = makeAffineTranform(for: animation.contentViewActions)
     }
