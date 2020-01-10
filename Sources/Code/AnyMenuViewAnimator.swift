@@ -14,7 +14,7 @@ internal class AnyMenuViewAnimator: NSObject {
     // MARK: - Stored Instance Properties
     fileprivate weak var viewController: AnyMenuViewController!
 
-    fileprivate let animation: MenuAnimation
+    fileprivate var animation: MenuAnimation
 
     fileprivate var initialMenuViewTransform: CGAffineTransform!
     fileprivate var finalMenuViewTransform: CGAffineTransform!
