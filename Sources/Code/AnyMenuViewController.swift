@@ -364,5 +364,6 @@ public class AnyMenuViewController: UIViewController {
     public override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         animator.configure(forViewController: self)
         configureMenuViewFrame()
+        animator.layout(progress: menuState == .closed ? 0 : 1)
     }
 }
