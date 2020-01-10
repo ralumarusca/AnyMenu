@@ -360,4 +360,9 @@ public class AnyMenuViewController: UIViewController {
         window!.rootViewController = self
         window!.makeKeyAndVisible()
     }
+
+    public override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        animator.configure(forViewController: self)
+        configureMenuViewFrame()
+    }
 }
