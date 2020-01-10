@@ -245,6 +245,11 @@ internal class AnyMenuViewAnimator: NSObject {
         configureGestureRecognizers()
     }
 
+    func updateFinalViewsTransform() {
+        finalMenuViewTransform = makeAffineTranform(for: animation.menuViewActions)
+        finalContentViewTransform = makeAffineTranform(for: animation.contentViewActions)
+    }
+
     func setSwipeGestures(enabled flag: Bool) {
         panGestureRecognizer?.isEnabled = flag
         screenEdgePanGestureRecognizer?.isEnabled = flag
